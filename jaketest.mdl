@@ -1,0 +1,15 @@
+frames 100
+basename simple
+push
+move 100 250 0
+move 300 0 0 slide
+sphere 0 0 0 99
+pop
+push
+move 250 250 0
+rotate y 90 roty
+rotate x 90 rotx
+box -30 -30 30 60 60 60
+vary roty 0 49 0 1
+vary rotx 50 99 0 1
+vary slide 0 99 0 1

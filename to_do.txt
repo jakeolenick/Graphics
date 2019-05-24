@@ -1,0 +1,37 @@
+6/8/15
+Spheres are colored in, boxes aren't?
+Spheres AREN'T colored in, or rather some of the sphere is.
+Boxes are half-colored in, on the lower left seemingly.
+
+6/9/15
+Scanline conversion produces parallelograms, not triangles!
+Sphere includes some issues:
+       1)lines connecting to edge of screen
+       2)one row of triangles not filled in
+<<<<<<< HEAD
+       3)some triangles floating off edge of sphere
+Box has same issue, but there is now a stray triangle for each face
+Sphere issue 1 resolved
+=======
+       3)some triangles floating off edge of sphere/being jittery
+Box has same issue as before, but there is now a stray triangle for each face
+Sphere issue 1 resolved
+
+6/10/15
+Sphere realization: jittery triangles (issue 3) due to good y values, bad x
+Should have finished MDL: rotx is doing rotz
+
+6/11/15
+<<<<<<< HEAD
+Attempted fix: changed method to determining bottom, middle, and top x and y values, now more manual
+
+=======
+Attempted fix: changed method to determining bottom, middle, and top x and y values, now more manual. Works well
+
+6/12/15
+GOOD NEWS: Obnoxious parallelogram issue in spheres has been, largely, solved. It was the floating point error.
+Sphere still has missing row
+FULL SUCCESS: no missing rows, and box works great.
+Downside: there might be a tiny triangle that doesn't get filled in on the sphere?
+>>>>>>> 621ec2bdaad0c76f791b80bdf528a45baea9fa85
+>>>>>>> origin/master
